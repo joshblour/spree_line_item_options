@@ -6,7 +6,7 @@ module Spree
     # YONAH: include options on populate
     def populate
       populator = Spree::OrderPopulator.new(current_order(create_order_if_necessary: true), current_currency)
-      
+
       if populator.populate(params.slice(:products, :variants, :quantity, :options)) ## changed
         current_order.ensure_updated_shipments
 

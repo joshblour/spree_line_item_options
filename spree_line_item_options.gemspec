@@ -3,9 +3,11 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_line_item_options'
   s.version     = '2.2.0'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Add gem summary here'
+  s.description = 'Add (optional) gem description here'
   s.required_ruby_version = '>= 1.9.3'
+  s.authors     = ["Yonah Forst"]
+  s.email       = ["yonaforst@hotmail.com"]
 
   # s.author    = 'You'
   # s.email     = 'you@example.com'
