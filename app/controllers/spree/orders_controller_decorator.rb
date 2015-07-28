@@ -9,9 +9,9 @@ module Spree
 
       if populator.populate(params.slice(:products, :variants, :quantity, :options)) ## changed
         current_order.ensure_updated_shipments
-
-        fire_event('spree.cart.add')
-        fire_event('spree.order.contents_changed')
+        current_order.update!
+        # fire_event('spree.cart.add')
+        # fire_event('spree.order.contents_changed')
         respond_with(@order) do |format|
           format.html { redirect_to cart_path }
         end
